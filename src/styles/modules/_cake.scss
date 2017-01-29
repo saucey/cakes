@@ -1,0 +1,35 @@
+.cakes {
+	margin-bottom: 2em;
+	border-bottom: 1px solid $color1;
+	background-color: #fff;
+	padding: 10px;
+	display: block;
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+		p {
+			color: black;
+		}
+	}
+
+	p {
+		margin: 10px 0 0 0;
+		color: #ccc;
+		transition: all .5s ease;
+		span {
+			display: block;
+			font-size: .8em;
+		}
+		font-size: 1.2em;
+	}
+}
+
+.cake__poster {
+	@extend .img-responsive;
+	margin-bottom: 10px;
+}
+
+.cake__poster-holder {
+	height: 150px;
+	overflow: hidden;
+}

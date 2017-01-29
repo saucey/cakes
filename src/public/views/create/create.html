@@ -1,0 +1,26 @@
+<div class="container create">
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<h1><a ui-sref="list()">Yummy Cakes</a></h1>
+			<form ng-submit="createCake(cake)">
+				<label for="cakeName">Name:</label>
+				<input required type="text" id="cakeName" ng-model="cake.name" class="global-submit__input form-control" placeholder="Cake Name...">
+				<label for="http">HTTP image path:</label>
+				<input required type="text" id="http" ng-model="cake.imageUrl" class="global-submit__input form-control" placeholder="http://...">
+				<label for="comment">Comment:</label>
+				<textarea required id="comment" ng-model="cake.comment" class="global-submit__input form-control" ></textarea>
+				<label for="yumRating">Score Factor:</label>
+				<select required name="yumRating" id="yumRating" class="form-control" ng-model="cake.yumFactor">
+					<option value="">Please Score your Yum Factor</option>
+					<option value="1">Yum Factor score of 1</option>
+					<option value="2">Yum Factor score of 2</option>
+					<option value="3">Yum Factor score of 3</option>
+					<option value="4">Yum Factor score of 4</option>
+					<option value="5">Yum Factor score of 5</option>
+				</select>
+				<button type="submit" class="global-submit__button btn btn-secondary">CREATE</button>
+			</form>
+		</div>
+	</div>
+</div>
+

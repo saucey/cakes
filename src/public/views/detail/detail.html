@@ -1,0 +1,32 @@
+<div class="detail-modal-top">
+
+	<h1><a ng-href="/">Yummy Cakes</a></h1>
+	<span class="glyphicon glyphicon-remove" ng-click="close()"></span>
+	<!--<div class="input-group">-->
+		<!--<button ui-sref="create()" class="btn btn-custom">Create Cake</button>-->
+	<!--</div>-->
+</div>
+<div class="detail-modal">
+	<div class="conatiner">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="{{cake.imageUrl == null ? 'http://placehold.it/800x800' : cake.imageUrl }}" alt="Cake Img" class="img-responsive">
+			</div>
+			<div class="col-sm-6">
+				<p>
+					<span>Name:</span>
+					{{cake.name}}
+				</p>
+				<p>
+					<span>Comment:</span>
+					{{cake.comment}}
+				</p>
+
+				<p>
+					<span>Ratings:</span>
+					<div star-rating rating-value="cake.yumFactor" max="5" ></div>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

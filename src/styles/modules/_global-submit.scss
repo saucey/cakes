@@ -1,0 +1,24 @@
+.global-submit__input {
+	padding: 25px 16px 25px 60px;
+	border: none;
+	background: white;
+	box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 0;
+	font-size: 1.6em;
+}
+
+.global-submit__button {
+	width: 100%;
+	padding: 10px;
+	border-radius: 0;
+	box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.05);
+	color: white;
+	transition: all .5s ease;
+	background: #ccc;
+	letter-spacing: 15px;
+	&:hover {
+		background: $color2;
+		color: white;
+	}
+}
+

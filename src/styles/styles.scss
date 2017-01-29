@@ -1,0 +1,16 @@
+$color1: #ccc;
+$color2: #ff8465;
+
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+@import 'base/mixins';
+
+@import 'layout/standard';
+
+@import 'modules/global-submit';
+@import 'modules/loader';
+@import 'modules/cake';
+
+

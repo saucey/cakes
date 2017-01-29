@@ -1,0 +1,47 @@
+<div class="container list">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="row">
+				<div class="col-lg-2 col-sm-4">
+					<h1><a ng-href="/">Yummy Cakes</a></h1>
+				</div>
+				<div class="col-lg-2 col-sm-5">
+					<div class="input-group">
+						<button ui-sref="create()" class="btn btn-custom">Create Cake</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--<span ng-repeat="cakes in cakeList">{{cakes.yumFactor}} out of-->
+            <!--&lt;!&ndash;{{rating.max}}&ndash;&gt;-->
+        <!--<div star-rating rating-value="cakes.yumFactor" max="5" ></div>-->
+        <!--</span>-->
+
+
+<div class="container list-collection">
+	<div class="loader" ng-if="!cakeList.length">Loading...</div>
+	<div class="row">
+		<div ng-repeat="cake in cakeList">
+			<div class="col-sm-3">
+				<span class="glyphicon glyphicon-trash" ng-click="removeCake(cake.id, $index)"></span>
+				<a class="cakes" ng-click="getCake(cake)">
+					<span class="clearfix"></span>
+					<div class="cake__poster-holder">
+						<img src="{{cake.imageUrl == null ? 'http://placehold.it/800x800' : cake.imageUrl }}" alt="Cake Img" class="cake__poster">
+					</div>
+					<p>
+						<span>Name:</span>
+						{{cake.name}}
+					</p>
+				</a>
+			</div>
+			<!--{{cake}}-->
+			<div class="clearfix" ng-if="!(($index+1)%4)"></div>
+		</div>
+	</div>
+</div>
+
+
