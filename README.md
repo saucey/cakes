@@ -9,10 +9,10 @@ bonus points!), Filters, Routing.
 smaller tablet devices
 * Demonstrate use of a build tool and a simple readme explaining how to run the project.
 E.g
-..* Grunt
-..* Gulp
-..* Webpack
-..* Npm running shell scripts if you prefer it leaner!
+	* Grunt
+	* Gulp
+	* Webpack
+	* Npm running shell scripts if you prefer it leaner!
 
 * The imageUrl can just be a plain text field (no image picking or upload is required)
 * Deliver the app in any way you like, via a github repository or even a zip file.
